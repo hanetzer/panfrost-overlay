@@ -1,0 +1,8 @@
+# Copyright 1999-2018 Gentoo Authors.
+# Distributed under the terms of the GNU General Public License v2
+
+# This file contains descriptions of VIDEO_CARDS USE_EXPAND flags.
+
+# Keep it sorted.
+
+panfrost - VIDEO_CARDS setting to build driver for Midgard video cards
