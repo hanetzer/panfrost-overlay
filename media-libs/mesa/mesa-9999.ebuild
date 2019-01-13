@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -16,7 +16,6 @@ HOMEPAGE="https://www.mesa3d.org/ https://mesa.freedesktop.org/"
 
 if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://gitlab.freedesktop.org/panfrost/mesa.git"
-	EGIT_BRANCH="staging"
 	EXPERIMENTAL="true"
 	inherit git-r3
 else
@@ -406,7 +405,7 @@ multilib_src_configure() {
 		gallium_enable video_cards_vivante etnaviv
 		gallium_enable video_cards_vmware svga
 		gallium_enable video_cards_nouveau nouveau
-		gallium_enable video_cards_panfrost panfrost
+		gallium_enable video_cards_panfrost panfrost rockchip
 		gallium_enable video_cards_imx imx
 
 		# Only one i915 driver (classic vs gallium). Default to classic.
